@@ -29,7 +29,7 @@ public class GameManager : MonoBehaviour
         }
         if (player == null)
         {
-            player = FindObjectOfType<Player>();
+            player = FindFirstObjectByType<Player>();
             if (player == null)
             {
                 Debug.LogError("GameManager cannot find Player script!");

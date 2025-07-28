@@ -41,7 +41,7 @@ public class Player : MonoBehaviour
         
         if (gameManager == null)
         {
-            gameManager = FindObjectOfType<GameManager>();
+            gameManager = FindFirstObjectByType<GameManager>();
             if (gameManager == null)
             {
                 Debug.LogError("Player cannot find GameManager!");
